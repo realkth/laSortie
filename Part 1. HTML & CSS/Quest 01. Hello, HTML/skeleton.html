@@ -1,26 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko-KR">
 	<head>
 		<meta charset="UTF-8">
 		<!-- TODO: 또 무엇이 필요할까요? -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Part 1. HTML, CSS / Quest 01. HTML" />
+		<meta name="subject" content="HTML 마크업">
+		<meta name="Author" content="HyeonWoo Jeon" />
+		<meta name="keywords" content="WebDevCurriculum" />
+
+		<!-- http://ogp.me/ (공식사이트) 에서 확인 가능 -->
+		<!-- https://gist.github.com/lancejpollard/1978404 -->
+		<meta property="og:title" content="Quest 01. HTML"/>
+		<meta property="og:url" content="https://github.com/realkth/laSortie"/>
+		<!-- 프로토콜이 https: 인경우 og:image:secure_url 사용 -->
+		<meta property="og:image" content="http://www.mysite.com/myimage.jpg"/>
+		<meta property="og:description" content="HTML 마크업 시간입니다."/>
+		<title>Quest 01</title>
 	</head>
 	<body>
 		<header>
 			<!-- TODO: 상단의 회색 부분은 어떻게 처리하면 좋을까요? -->
+			<div>
+				<div class="logo">
+					<a href="#"><span>Logo Here</span></a>
+				</div>
+				<form action="http://validator.w3.org/check" method="get">
+					<label for="search">검색</label>
+					<input id="search" type="text" placeholder="Search of jump to..." />
+				</form>
+				<ul>
+					<li>
+						<a href="#">Pull requests</a>
+					</li>
+					<li>
+						<a href="#">Issues</a>
+					</li>
+					<li>
+						<a href="#">Marketplace</a>
+					</li>
+					<li>
+						<a href="#">Explore</a>
+					</li>
+				</ul>
+				<div class="button">
+					<button>Bell</button>
+					<button>+</button>
+					<button>profile</button>
+				</div>
+			</div>
 		</header>
 
 		<section class="main">
 			<header class="main-header">
 				<!-- TODO: 메인의 헤더 부분 -->
+				<div class="main-header-title">
+					<a href="#"><span>ID Here</span></a> / <a href="#"><span>Rep Here</span></a>
+					<button>Watch</button><span><a href="#">0</a></span>
+					<button>Star</button><span><a href="#">0</a></span>
+					<button>Fork</button><span><a href="#">0</a></span>
+					<ul class="main-header-tab">
+						<li>Code</li>
+						<li>Issues <span>0</span></li>
+						<li>Pull requests <span>0</span></li>
+						<li>Projects <span>0</span></li>
+						<li>Wiki</li>
+						<li>Insights</li>
+					</ul>
+				</div>
 			</header>
 
 			<section class="main-detail">
 				<!-- TODO: 메인의 부분 -->
+				<p>Description Here</p>
+				<div class="main-detail-icons">
+					<ul>
+						<li><a href="#"><span>0</span> commits</a></li>
+						<li><a href="#"><span>0</span> branch</a></li>
+						<li><a href="#"><span>0</span> releases</a></li>
+						<li><a href="#"><span>0</span> contributor</a></li>
+						<li><a href="#">MIT</a></li>
+					</ul>
+				</div>
+				<div class="main-detail-buttons">
+					<button>Branch: master</button>
+					<button><a href="#">New pull request</a></button>
+					<button><a href="#">Create new file</a></button>
+					<button><a href="#">Upload files</a></button>
+					<button><a href="#">Find file</a></button>
+					<button>Clone or download</button>
+				</div>
+				<table class="table">
+					<colgroup>
+						<col style="width:45%;"/>
+						<col style="width:35%;"/>
+						<col style="width:20%;"/>
+					</colgroup>
+					<tr class="sub-title">
+						<th>KnowRe Quest 02 added constraint</th>
+						<th></th>
+						<th>Last commit 8a3080e on 7 Aug 2016</th>
+					</tr>
+					<tr>
+						<td><a href="#">Part 0. git/Quest00. Hello, git</a></td>
+						<td><a href="#">Part 0. Upload</a></td>
+						<td>2 days ago</td>
+					</tr>    
+					<tr>
+						<td><a href="#">Part 1. HTML & CSS</a></td>
+						<td><a href="#">Quest 02 added constraint</a></td>
+						<td>3 days ago</td>
+					</tr>    
+				</table>
+				<div class="main-detail-article">
+					<div class="main-detail-article-header">
+						<p>README.md</p>
+					</div>
+					<div class="main-detail-article-contents">
+						<p>KnowRe web development curriculum 2018</p>
+					</div>
+				</div>
 			</section>
 		</section>
 
 		<footer>
 			<!-- TODO: 하단의 Copyright, Terms, Privacy 등은 어떻게 처리하면 좋을까요? -->
+			<div class="footer-wrap">
+				<span>2018 GitHub, Inc</span>
+				<ul>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Status</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+				<span>Logo Here</span>
+				<ul>
+					<li><a href="#">Contact GitHub</a></li>
+					<li><a href="#">API</a></li>
+					<li><a href="#">Training</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</div>
 		</footer>
 	</body>
 </html>
