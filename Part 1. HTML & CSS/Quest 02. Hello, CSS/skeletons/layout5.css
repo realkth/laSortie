@@ -10,29 +10,47 @@ body {
 
 .contents {
 	/* TODO: 이 곳을 채우세요! */
+	display: grid;
+	grid-template-areas:
+    'menu header right'
+    'menu main right'
+    'footer footer footer';
 }
 
 .main {
 	background-color: skyblue;
 	/* TODO: 이 곳을 채우세요! */
+	grid-area: main;
+	display: block;
 }
 
 .main header {
 	background-color: lightgray;
 	/* TODO: 이 곳을 채우세요! */
+	height: 30px;
+	display: block;
+	grid-area: header;
 }
 
 .left {
 	background-color: pink;
 	/* TODO: 이 곳을 채우세요! */
-}
+	width: 200px;
+	display: block;
+	grid-area: menu;
+}	
 
 .right {
 	background-color: greenyellow;
 	/* TODO: 이 곳을 채우세요! */
+	width: 300px;
+	display: block;
+	grid-area: right;
 }
 
 footer {
 	background-color: yellow;
 	/* TODO: 이 곳을 채우세요! */
+	height: 50px;
+	grid-area: footer;
 }
