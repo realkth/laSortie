@@ -1,171 +1,177 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <meta charset="UTF-8">
-    <!-- TODO: 또 무엇이 필요할까요? -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta charset="UTF-8">
+		<!-- TODO: 또 무엇이 필요할까요? -->
+		<!-- 사용자의 기기 width값에 따라 적절한 width값 지정-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- IE문서모드 - ie8 이상 버전에서 항상 최신 표준모드로 렌더링 -->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Part 1. HTML, CSS / Quest 01. HTML" />
+		<meta name="subject" content="HTML 마크업">
+		<meta name="Author" content="HyeonWoo Jeon" />
+		<meta name="keywords" content="git, html, css, quest, study, laSortie" />
 
-    <!-- 전화번호나 주소 자동으로 링크 달리는 것 초기화 -->
-    <meta name="format-detection" content="telephone=no, address=no, email=no" />
-    <!-- ?? -->
-    <meta property="og:image" content="/images.jpg"/>
+		<!-- http://ogp.me/ (공식사이트) 에서 확인 가능 -->
+		<!-- https://gist.github.com/lancejpollard/1978404 -->
+		<meta property="og:title" content="Quest 01. HTML"/>
+		<meta property="og:url" content="https://github.com/realkth/laSortie"/>
 
+		<!-- 프로토콜이 https: 인경우 og:image:secure_url 사용 -->
+		<meta property="og:image" content="http://www.mysite.com/myimage.jpg"/>
+		<meta property="og:description" content="HTML 마크업 시간입니다."/>
 
-    <title>html Quest</title>
+		<!-- href값이 base값이 되어 url을 안적어도 됨 -->
+		<base href="https://www.w3schools.com/images/" target="_blank">
+
+		<!-- 스크립트를 제한한 사용자에게 메세지 전달 가능 -->
+		<script>
+			document.write("Hello World!")
+		</script>
+		<noscript>Your browser does not support JavaScript!</noscript>
+		<title>Quest 01</title>
+
 	</head>
 	<body>
 		<header>
-      <!-- TODO: 상단의 회색 부분은 어떻게 처리하면 좋을까요? -->
-      <img src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" alt="github-logo" width="70">
-      <div>
-        <button type="button">This repository</button>
-        <input type="text" placeholder="Search">
-      </div>
-      <nav>
-        <ul>
-          <li>Pull Requests</li>
-          <li>Issues</li>
-          <li>MarketPlace</li>
-          <li>Explore</li>
-        </ul>
-      </nav>
-      <button type="button">알림</button>
-      <button type="button">user</button>
+			<!-- TODO: 상단의 회색 부분은 어떻게 처리하면 좋을까요? -->
+			<h1 class="logo">
+				<a href="#">
+					<img src="#" alt="logo">
+				</a>
+			</h1>
+			<form action="http://validator.w3.org/check" method="get">
+				<label for="search">검색</label>
+				<input id="search" type="text" placeholder="Search of jump to..." />
+			</form>
+			<ul>
+				<li>
+					<a href="#">Pull requests</a>
+				</li>
+				<li>
+					<a href="#">Issues</a>
+				</li>
+				<li>
+					<a href="#">Marketplace</a>
+				</li>
+				<li>
+					<a href="#">Explore</a>
+				</li>
+			</ul>
+			<div class="button">
+				<button>Bell</button>
+				<button>+</button>
+				<button>profile</button>
+			</div>
 		</header>
 
 		<section class="main">
 			<header class="main-header">
-        <!-- TODO: 메인의 헤더 부분 -->
-        <nav>
-          <ul>
-            <li>knowRe</li>
-            <li>WebDevCurriculum</li>
-          </ul>
-        </nav>
-
-        <div>
-          <button type="button">Unwatch<span>19</span></button>
-          <button type="button">Star<span>113</span></button>
-          <button type="button">Fork<span>106</span></button>
-        </div>
-
-        <div>
-          <nav>
-            <ul>
-              <li>Code</li>
-              <li>Issues<span>0</span></li>
-              <li>Pull Requests<span>1</span></li>
-              <li>Projects<span>0</span></li>
-              <li>Inshights<span>0</span></li>
-            </ul>
-          </nav>
-        </div>
+				<!-- TODO: 메인의 헤더 부분 -->
+				<div class="main-header-title">
+					<a href="#"><span>ID Here</span></a> / <a href="#"><span>Rep Here</span></a>
+					<button>Watch</button><span><a href="#">0</a></span>
+					<button>Star</button><span><a href="#">0</a></span>
+					<button>Fork</button><span><a href="#">0</a></span>
+					<nav>
+						<ul class="main-header-tab">
+							<li>Code</li>
+							<li>Issues <span>0</span></li>
+							<li>Pull requests <span>0</span></li>
+							<li>Projects <span>0</span></li>
+							<li>Wiki</li>
+							<li>Insights</li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 
 			<section class="main-detail">
-        <!-- TODO: 메인의 부분 -->
-        <p>Knowre web development curriculum for noobs</p>
-        <nav>
-          <ul>
-            <li><a href="#"><span>53</span>commits</a></li>
-            <li><a href="#"><span>1</span>branch</a></li>
-            <li><a href="#"><span>0</span>releases</a></li>
-            <li><a href="#"><span>2</span>contributors</a></li>
-            <li><a href="#">MIT</a></li>
-          </ul>
-        </nav>
-
-        <div>
-          <div>
-            <button>Branch: master</button>
-            <button>New pull request</button>
-          </div>
-          <div>
-            <button>Create new file</button>
-            <button>Upload files</button>
-            <button>Find file</button>
-          </div>
-          <div>
-            <button>Clone or Download</button>
-          </div>
-        </div>
-
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th>Kivol async/await 질문 추가</th>
-                <th>Kivol async/await 질문 추가</th>
-                <th>Latest commit 2a1e4ff  19 days ago</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Part 0. git/Quest 00. Hello, git</td>
-                <td>Part 0~1 리뉴얼</td>
-                <td>Latest commit 2a1e4ff  19 days ago</td>
-              </tr>
-              <tr>
-                <td>Part 0. git/Quest 00. Hello, git</td>
-                <td>Part 0~1 리뉴얼</td>
-                <td>Latest commit 2a1e4ff  19 days ago</td>
-              </tr>
-              <tr>
-                <td>Part 0. git/Quest 00. Hello, git</td>
-                <td>Part 0~1 리뉴얼</td>
-                <td>Latest commit 2a1e4ff  19 days ago</td>
-              </tr>
-              <tr>
-                <td>Part 0. git/Quest 00. Hello, git</td>
-                <td>Part 0~1 리뉴얼</td>
-                <td>Latest commit 2a1e4ff  19 days ago</td>
-              </tr>
-            </tbody>
-          </table>
-
-          <article>
-            <h1>Knowre web development curriculum 2018</h1>
-            <hr>
-            <h2>소개</h2>
-            <hr>
-            <ul>
-              <li>Knowre의 신입 웹 개발자 교육을 위한 웹 개발 교육 커리큘럼의 2018년 버전입니다.</li>
-              <li>이 커리큘럼을 통해 신입 개발자들은 git, HTML, CSS, front-end JavaScript, node.js, MySQL, 그리고 더 나아가 선택된 몇 가지의 최신 웹 기술과 그 작동 원리에 대해 익히게 됩니다.</li>
-            </ul>
-          </article>
-        </div>
+				<!-- TODO: 메인의 부분 -->
+				<p>Description Here</p>
+				<div class="main-detail-icons">
+					<ul>
+						<li><a href="#"><span>0</span> commits</a></li>
+						<li><a href="#"><span>0</span> branch</a></li>
+						<li><a href="#"><span>0</span> releases</a></li>
+						<li><a href="#"><span>0</span> contributor</a></li>
+						<li><a href="#">MIT</a></li>
+					</ul>
+				</div>
+				<div class="main-detail-buttons">
+					<button>Branch: master</button>
+					<a href="#">New pull request</a>
+					<a href="#">Create new file</a>
+					<a href="#">Upload files</a>
+					<a href="#">Find file</a>
+					<details>
+						<summary>Clone or download</summary>
+						<p>Clone with HTTPS</p>
+					</details>
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">Kivol async/await 질문 추가</th>
+								<th>Latest commit 2a1e4ff  19 days ago</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Part 0. git/Quest 00. Hello, git</td>
+								<td>Part 0~1 리뉴얼</td>
+								<td>Latest commit 2a1e4ff  19 days ago</td>
+							</tr>
+							<tr>
+								<td>Part 0. git/Quest 00. Hello, git</td>
+								<td>Part 0~1 리뉴얼</td>
+								<td>Latest commit 2a1e4ff  19 days ago</td>
+							</tr>
+							<tr>
+								<td>Part 0. git/Quest 00. Hello, git</td>
+								<td>Part 0~1 리뉴얼</td>
+								<td>Latest commit 2a1e4ff  19 days ago</td>
+							</tr>
+							<tr>
+								<td>Part 0. git/Quest 00. Hello, git</td>
+								<td>Part 0~1 리뉴얼</td>
+								<td>Latest commit 2a1e4ff  19 days ago</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="main-detail-article">
+						<div class="main-detail-article-header">
+							<p>README.md</p>
+						</div>
+						<div class="main-detail-article-contents">
+							<p>KnowRe web development curriculum 2018</p>
+						</div>
+					</div>
+				</div>
+				
 			</section>
 		</section>
 
 		<footer>
-      <!-- TODO: 하단의 Copyright, Terms, Privacy 등은 어떻게 처리하면 좋을까요? -->
-      <span>C© 2018 GitHub, Inc.</span>
-      <div>
-        <ul>
-          <li>Terms</li>
-          <li>Privacy</li>
-          <li>Security</li>
-          <li>Status</li>
-          <li>Help</li>
-        </ul>
-      </div>
-
-      <div>
-        <button type="button">로고</button>
-      </div>
-
-      <div>
-        <ul>
-          <li>Contact GitHub</li>  
-          <li>API</li>  
-          <li>Training</li>  
-          <li>Shop</li>  
-          <li>Blog</li>  
-          <li>About</li>  
-        </ul>
-      </div>
-
+			<!-- TODO: 하단의 Copyright, Terms, Privacy 등은 어떻게 처리하면 좋을까요? -->
+			<div class="footer-wrap">
+				<p>2018 GitHub, Inc</p>
+				<ul>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Status</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+				<p>Logo Here</p>
+				<ul>
+					<li><a href="#">Contact GitHub</a></li>
+					<li><a href="#">API</a></li>
+					<li><a href="#">Training</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</div>
 		</footer>
 	</body>
 </html>

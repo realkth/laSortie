@@ -9,30 +9,35 @@ body {
 }
 
 .contents {
-	/* TODO: 이 곳을 채우세요! */
+	display: flex;
 }
 
 .main {
 	background-color: skyblue;
-	/* TODO: 이 곳을 채우세요! */
+	/* flex-grow : 공간이 남으면 늘릴것인가
+	| flex-shrink : 공간이 모자르면 축소 할 것인가
+	| flex-basis : 초기값 */
+	/* flex: 0 0 1; */
+	/* flex: 1 0 100px; */
+	flex: 0 1 100%;
 }
 
 .main header {
 	background-color: lightgray;
-	/* TODO: 이 곳을 채우세요! */
+	height: 30px;
 }
 
 .left {
 	background-color: pink;
-	/* TODO: 이 곳을 채우세요! */
+	flex: 0 0 200px;
 }
 
 .right {
 	background-color: greenyellow;
-	/* TODO: 이 곳을 채우세요! */
+	flex: 0 0 300px;
 }
 
 footer {
 	background-color: yellow;
-	/* TODO: 이 곳을 채우세요! */
+	height: 50px;
 }
