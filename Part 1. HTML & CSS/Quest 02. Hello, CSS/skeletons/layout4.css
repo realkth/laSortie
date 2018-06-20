@@ -9,7 +9,11 @@ body {
 }
 
 .contents {
+	/* TODO: 이 곳을 채우세요! */
 	display: flex;
+	justify-content : space-between;
+	/* flex-direction : row; */
+	
 }
 
 .main {
@@ -24,20 +28,25 @@ body {
 
 .main header {
 	background-color: lightgray;
+	/* TODO: 이 곳을 채우세요! */
 	height: 30px;
 }
 
 .left {
 	background-color: pink;
-	flex: 0 0 200px;
+	/* TODO: 이 곳을 채우세요! */
+	width: 200px;
 }
 
 .right {
 	background-color: greenyellow;
-	flex: 0 0 300px;
+	/* TODO: 이 곳을 채우세요! */
+	width: 300px;
 }
 
 footer {
 	background-color: yellow;
+	/* TODO: 이 곳을 채우세요! */
 	height: 50px;
+	width: 100%;
 }
