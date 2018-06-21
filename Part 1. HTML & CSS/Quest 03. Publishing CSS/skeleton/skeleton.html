@@ -1,10 +1,177 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<link>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="./skeleton.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Part 1. HTML, CSS / Quest 01. HTML" />
+		<meta name="subject" content="HTML 마크업">
+		<meta name="Author" content="HyeonWoo Jeon" />
+		<meta name="keywords" content="git, html, css, quest, study, laSortie" />
+
+		<meta property="og:title" content="Quest 01. HTML"/>
+		<meta property="og:url" content="https://github.com/realkth/laSortie"/>
+
+		<meta property="og:image" content="http://www.mysite.com/myimage.jpg"/>
+		<meta property="og:description" content="HTML 마크업 시간입니다."/>
+
+		<!-- <base href="https://www.w3schools.com/images/" target="_blank"> -->
+
+		<!-- <script>
+			document.write("Hello World!")
+		</script> -->
+        <noscript>Your browser does not support JavaScript!</noscript>
+        <link rel="stylesheet" href="skeleton.css">
+		<title>Quest 01</title>
+
 	</head>
 	<body>
-		<!-- TODO: Quest 1에서 완성한 HTML을 바탕으로 필요한 부분을 수정해 보세요 -->
+		<header class="header">
+            <div class="container">
+                <h1 class="logo">
+                    <a href="#">
+                        <img class="logo-img" src="#" alt="logo">
+                    </a>
+                </h1>
+                <form class="form-search" action="http://validator.w3.org/check" method="get">
+                    <label for="search">검색</label>
+                    <input class="header-input" id="search" type="text" placeholder="Search of jump to..." />
+                </form>
+                <ul class="header-link-list">
+                    <li class="header-link-list-item">
+                        <a href="#">Pull requests</a>
+                    </li>
+                    <li class="header-link-list-item">
+                        <a href="#">Issues</a>
+                    </li>
+                    <li class="header-link-list-item">
+                        <a href="#">Marketplace</a>
+                    </li>
+                    <li class="header-link-list-item">
+                        <a href="#">Explore</a>
+                    </li>
+                </ul>
+                <div class="header-buttons">
+                    <button>Bell</button>
+                    <button>+</button>
+                    <button>profile</button>
+                </div>
+
+            </div>
+		</header>
+
+		<section class="main">
+            <header class="main-header">
+                <div class="container">
+                    <div class="main-header-title">
+                        <div class="main-header-links">
+                            <a class="main-header-link-item" href="#"><span>ID Here</span></a> / <a class="main-header-link-item" href="#"><span>Rep Here</span></a>
+                        </div>
+                        <div class="main-header-btns">
+                            <button>Watch</button><span><a class="main-header-link-item" href="#">0</a></span>
+                            <button>Star</button><span><a class="main-header-link-item" href="#">0</a></span>
+                            <button>Fork</button><span><a class="main-header-link-item" href="#">0</a></span>
+                        </div>
+                    </div>
+                    <nav >
+                        <ul class="main-header-tab">
+                            <li  class="main-header-tab-item">Code</li>
+                            <li  class="main-header-tab-item">Issues <span>0</span></li>
+                            <li  class="main-header-tab-item">Pull requests <span>0</span></li>
+                            <li  class="main-header-tab-item">Projects <span>0</span></li>
+                            <li  class="main-header-tab-item">Wiki</li>
+                            <li  class="main-header-tab-item">Insights</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="container">
+                <section class="main-detail">
+                    <p>Description Here</p>
+                    <div class="main-detail-icons">
+                        <ul>
+                            <li><a href="#"><span>0</span> commits</a></li>
+                            <li><a href="#"><span>0</span> branch</a></li>
+                            <li><a href="#"><span>0</span> releases</a></li>
+                            <li><a href="#"><span>0</span> contributor</a></li>
+                            <li><a href="#">MIT</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-detail-buttons">
+                        <button>Branch: master</button>
+                        <a href="#">New pull request</a>
+                        <a href="#">Create new file</a>
+                        <a href="#">Upload files</a>
+                        <a href="#">Find file</a>
+                        <details>
+                            <summary>Clone or download</summary>
+                            <p>Clone with HTTPS</p>
+                        </details>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Kivol async/await 질문 추가</th>
+                                    <th>Latest commit 2a1e4ff  19 days ago</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Part 0. git/Quest 00. Hello, git</td>
+                                    <td>Part 0~1 리뉴얼</td>
+                                    <td>Latest commit 2a1e4ff  19 days ago</td>
+                                </tr>
+                                <tr>
+                                    <td>Part 0. git/Quest 00. Hello, git</td>
+                                    <td>Part 0~1 리뉴얼</td>
+                                    <td>Latest commit 2a1e4ff  19 days ago</td>
+                                </tr>
+                                <tr>
+                                    <td>Part 0. git/Quest 00. Hello, git</td>
+                                    <td>Part 0~1 리뉴얼</td>
+                                    <td>Latest commit 2a1e4ff  19 days ago</td>
+                                </tr>
+                                <tr>
+                                    <td>Part 0. git/Quest 00. Hello, git</td>
+                                    <td>Part 0~1 리뉴얼</td>
+                                    <td>Latest commit 2a1e4ff  19 days ago</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="main-detail-article">
+                            <div class="main-detail-article-header">
+                                <p>README.md</p>
+                            </div>
+                            <div class="main-detail-article-contents">
+                                <p>KnowRe web development curriculum 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+		</section>
+
+		<footer>
+			<div class="footer-wrap">
+				<p>2018 GitHub, Inc</p>
+				<ul>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Security</a></li>
+					<li><a href="#">Status</a></li>
+					<li><a href="#">Help</a></li>
+				</ul>
+				<p>Logo Here</p>
+				<ul>
+					<li><a href="#">Contact GitHub</a></li>
+					<li><a href="#">API</a></li>
+					<li><a href="#">Training</a></li>
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</div>
+		</footer>
 	</body>
 </html>
